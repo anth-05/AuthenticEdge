@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details | Authentic Edge</title>
+    <link rel="stylesheet" href="theme.css">
+    <link rel="stylesheet" href="single-product.css">
+    <link rel="stylesheet" href="cart.css">
+    <link rel="stylesheet" href="mobile-header.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+  <div class="header-container">
+    <h1 class="logo"><a href="index.html">Authentic Edge</a></h1>
+    <nav class="nav-menu" id="header-buttons"></nav>
+  </div>
+</header>
+
+<main class="product-main">
+    <div class="navigation-header">
+        <a href="product.html" class="return-btn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+            Back to Products
+        </a>
+    </div>
+
+    <div class="product-page-container">
+        <div class="product-gallery">
+            <div class="main-image-container">
+                <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" 
+                    alt="Loading..." 
+                    id="productImage" 
+                    class="main-product-image">
+            </div>
+        </div>
+
+        <div class="product-info-column">
+            <div class="info-header">
+                <span id="productStatus" class="product-status-tag">Premium</span>
+                <h1 id="productTitle" class="product-name">Loading Product...</h1>
+                <p id="productPrice" class="product-price">--</p>
+            </div>
+
+            <div class="product-description-section">
+                <h3 class="section-label">Description & Fit</h3>
+                <p id="productDescription" class="description-text">
+                    Please wait while we retrieve the product details...
+                </p>
+            </div>
+
+            <button id="messageBtn" class="primary-btn">Add to Cart</button>
+
+            <div class="product-meta-grid">
+                <div class="meta-item">
+                    <span class="meta-label">Category</span>
+                    <span id="productCategory" class="meta-value">--</span>
+                </div>
+                <div class="meta-item">
+                    <span class="meta-label">Shipping</span>
+                    <span class="meta-value">Standard (7 - 12 werkdagen)</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<div id="cartOverlay" class="cart-overlay"></div>
+<div id="cartDrawer" class="cart-drawer">
+    <div class="cart-header">
+        <h3>Concierge Selection</h3>
+        <button id="closeCart" class="close-btn">&times;</button>
+    </div>
+
+    <div id="cartItemsList" class="cart-items">
+        <p class="empty-msg">Your Cart is empty.</p>
+    </div>
+
+<div class="cart-footer">
+    <p id="totalItemsCount">Total Items: 0</p>
+    <button id="checkoutBtn" class="submit-btn">SUBMIT INQUIRY</button>
+</div>
+</div>
+
+<div id="cartTrigger" class="cart-trigger">
+    <span>Cart</span>
+    <span id="cartBadge" class="badge">0</span>
+</div>
+<div id="checkoutModal" class="modal-overlay">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h2>Leveringsgegevens</h2>
+            <button id="closeModal" class="close-modal">&times;</button>
+        </div>
+
+        <form id="checkoutForm">
+            <div class="form-grid">
+                <input type="text" name="voornaam" placeholder="Voornaam" required>
+                <input type="text" name="achternaam" placeholder="Achternaam" required>
+                <input type="text" name="adres" placeholder="Adres" required>
+                <input type="text" name="stad" placeholder="Stad" required>
+                <input type="text" name="postcode" placeholder="Postcode" required>
+                <input type="text" name="land" placeholder="Land" required>
+                <input type="text" name="regio" placeholder="Regio" required>
+                <input type="text" name="maat" placeholder="Maat (Size)" required>
+                <input type="text" name="budget" placeholder="Budget" required>
+                
+                <input type="email" name="email" placeholder="E-Mail" required>
+            </div>
+
+            <div class="shipping-info">
+                <h4>Hoe werkt de verzending?</h4>
+                <p>U krijgt met 2-5 Dagen tijd foto’s met uw product na dat u het product goedkeurt voor verzending zal het naar u opgestuurd worden en dat kan 10-15 werkdagen duren.</p>
+                <p>Heeft u het goedgekeurd krijgt u 2-3 dagen later een track & trace code van MijnDhl.</p>
+                <p class="warning-text"><strong>LET OP:</strong> Bij een foute maatkeuze na de Quality Check is retourneren/refunden niet mogelijk. Alleen als u een verkeerd item ontvangt ‼️</p>
+                <p class="payment-note">Shipping €7,25 verzendkosten (Per product).</p>
+            </div>
+            <div class="shipping-info">
+    <p>By clicking "Submit Order", you agree to our 
+       <a href="legal.html" target="_blank">Terms & Conditions</a> 
+       including our <span class="warning-text">No Return Policy</span>.
+    </p>
+</div>
+
+            <button type="submit" class="final-submit-btn">Bevestig & Verstuur Selectie</button>
+        </form>
+    </div>
+</div>
+
+<footer class="site-footer">
+    <div class="footer-left">
+      <p class="brand">the authentic edge</p>
+    </div>
+
+    <div class="footer-center">
+      <a href="legal.html" class="legal-link">Privacy & Terms</a>
+    </div>
+
+    <div class="footer-right">
+      <a href="mailto:authenticedge@gmail.com" class="email">authenticedge@gmail.com</a>
+      <a href="https://instagram.com/theauthenticedge_/" target="_blank" class="insta-btn">Instagram</a>
+    </div>
+</footer>
+
+<script src="header.js"></script>
+<script type="module" src="single-product.js"></script>
+<script type="module" src="cart.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Messages | Authentic Edge Admin</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap">
+  <link rel="stylesheet" href="theme.css">
+  <link rel="stylesheet" href="admin-base.css">
+  <link rel="stylesheet" href="admin-messages.css">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
+</head>
+
+<body class="dashboard-body">
+  
+  <aside class="sidebar">
+    <div class="sidebar-top">
+      <h2 class="sidebar-logo">the authentic edge</h2>
+      <span class="admin-badge">Concierge</span>
+    </div>
+
+    <ul class="sidebar-menu">
+      <li><a href="admin-dashboard.html"><i class="ri-dashboard-line"></i> Dashboard</a></li>
+      <li><a href="admin-products.html"><i class="ri-box-3-line"></i> Products</a></li>
+      <li><a href="admin-messages.html" class="active"><i class="ri-message-3-line"></i> Messages</a></li>
+      <li><a href="admin-subscriptions.html"><i class="ri-vip-crown-line"></i> Subscriptions</a></li>
+      <li class="logout-item"><a href="#" class="logout-link"><i class="ri-logout-circle-line"></i> Logout</a></li>
+    </ul>
+  </aside>
+
+  <main class="dashboard-main no-padding">
+    <div class="messages-layout">
+      
+      <section class="inbox-sidebar">
+        <div class="inbox-header">
+          <h3>Inbox</h3>
+          <div id="message-badge" class="badge">0</div>
+        </div>
+        <div class="users-list" id="usersList">
+          </div>
+      </section>
+
+      <section class="chat-panel">
+        <header class="chat-header" id="chatHeader">
+          <span class="eyebrow">Select a conversation to begin</span>
+        </header>
+
+        <div class="chat-body" id="chatBody">
+          </div>
+
+        <footer class="chat-footer">
+          <div class="input-wrapper">
+            <button id="attachBtn" class="icon-btn"><i class="ri-attachment-line"></i></button>
+            <div id="imagePreviewContainer" style="display: none; padding: 10px; position: relative;">
+    <img id="imagePreview" src="" style="max-height: 100px; border-radius: 4px; border: 1px solid #ddd;">
+    <button id="clearPreview" style="position: absolute; top: 5px; left: 110px; background: red; color: white; border: none; border-radius: 50%; width: 20px; height: 20px; cursor: pointer;">×</button>
+</div>
+            <input id="adminInput" type="text" placeholder="WRITE A RESPONSE...">
+            <input id="fileInput" type="file" hidden>
+            <button id="adminSend" class="send-btn">Send</button>
+          </div>
+        </footer>
+      </section>
+
+    </div>
+  </main>
+    <div class="bottom-tabs">
+    <a href="admin-dashboard.html" class="active"><i class="ri-home-5-line"></i></a>
+    <a href="admin-products.html"><i class="ri-box-3-line"></i></a>
+    <a href="admin-messages.html"><i class="ri-message-3-line"></i></a>
+    <a href="admin-subscriptions.html"><i class="ri-vip-crown-line"></i></a>
+    <a href="#" class="logout-link"><i class="ri-logout-circle-line"></i></a>
+  </div>
+
+  <script type="module" src="admin-messages.js"></script>
+  <script src="logout.js"></script>
+</body>
+</html>

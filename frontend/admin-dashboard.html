@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+  <title>Admin Dashboard | Authentic Edge</title> 
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap">
+  <link rel="stylesheet" href="theme.css" />
+  <link rel="stylesheet" href="admin-base.css" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
+</head>
+
+<body class="dashboard-body">
+
+  <aside class="sidebar">
+    <div class="sidebar-top">
+      <h2 class="sidebar-logo">the authentic edge</h2>
+      <span class="admin-badge">Management</span>
+    </div>
+ 
+    <ul class="sidebar-menu">
+      <li><a href="admin-dashboard.html" class="active"><i class="ri-dashboard-line"></i> Dashboard</a></li>
+      <li><a href="admin-products.html"><i class="ri-box-3-line"></i> Products</a></li>
+      <li><a href="admin-messages.html"><i class="ri-message-3-line"></i> Messages</a></li>
+      <li><a href="admin-subscriptions.html"><i class="ri-vip-crown-line"></i> Subscriptions</a></li>
+      <li class="logout-item"><a href="#" class="logout-link"><i class="ri-logout-circle-line"></i> Logout</a></li>
+    </ul>
+  </aside>
+
+  <main class="dashboard-main">
+    <header class="main-header">
+       <div class="header-left">
+         <span class="eyebrow">Overview</span>
+         <h1>Dashboard</h1>
+         <p id="welcome-message">System overview and user management.</p>
+       </div>
+    </header>
+
+    <section class="stat-grid">
+      <div class="stat-card">
+        <span class="stat-label">Total Users</span>
+        <h3 id="user-count">0</h3>
+      </div>
+      <div class="stat-card">
+        <span class="stat-label">Admin Users</span>
+        <h3 id="admin-count">0</h3>
+      </div>
+      <div class="stat-card">
+        <span class="stat-label">Regular Users</span>
+        <h3 id="regular-count">0</h3>
+      </div>
+    </section>
+
+    <section class="admin-section">
+      <div class="section-header">
+        <h2>Recent Registration</h2>
+      </div>
+      <div class="table-container">
+        <table id="recent-users">
+          <thead>
+            <tr>
+              <th>Email</th>
+              <th>Role</th>
+              <th>Registered At</th>
+            </tr>
+          </thead>
+          <tbody>
+            </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="admin-section">
+      
+      <div class="section-header">
+        <h2>Manage Users</h2>
+      </div>
+      <div class="admin-search-container" style="margin-bottom: 20px;">
+    <input type="search" id="userSearchInput" placeholder="SEARCH BY EMAIL..." 
+           style="width: 100%; padding: 15px; border: 1px solid #eee; font-family: inherit; font-size: 0.75rem; letter-spacing: 0.1em; outline: none; border-bottom: 2px solid #000;">
+</div>
+      <div class="table-container">
+        <table id="all-users">
+          <thead>
+            <tr>
+              <th>User ID</th>
+              <th>Email</th>
+              <th>Plan</th> 
+              <th>Role</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody id="all-users-body">
+            </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <div class="bottom-tabs">
+    <a href="admin-dashboard.html" class="active"><i class="ri-home-5-line"></i></a>
+    <a href="admin-products.html"><i class="ri-box-3-line"></i></a>
+    <a href="admin-messages.html"><i class="ri-message-3-line"></i></a>
+    <a href="admin-subscriptions.html"><i class="ri-vip-crown-line"></i></a>
+    <a href="#" class="logout-link"><i class="ri-logout-circle-line"></i></a>
+
+  </div>
+
+  <script type="module" src="admin-dashboard.js" defer></script>
+  <script src="logout.js"></script>
+</body>
+</html>

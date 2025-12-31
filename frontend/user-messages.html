@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Concierge | Authentic Edge</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap">
+  <link rel="stylesheet" href="theme.css">
+  <link rel="stylesheet" href="user-message.css">
+  <link rel="stylesheet" href="mobile-header.css">
+</head> 
+
+<body class="messages-page"> 
+
+  <header>
+    <div class="header-container">
+      <h1 class="logo"><a href="index.html">Authentic Edge</a></h1>
+      <div class="menu-toggle" aria-label="Toggle navigation">☰</div>
+      <nav class="nav-menu" id="header-buttons"></nav>
+    </div>
+  </header>
+
+  <main class="chat-full-screen">
+  <div class="chat-canvas-full">
+    
+    <div class="admin-presence-bar">
+      <div class="presence-info">
+        <div class="avatar-circle">AE</div>
+        <div class="text-info">
+          <span class="name">Concierge Support</span>
+          <span class="status">Official Channel</span>
+        </div>
+      </div>
+    </div>
+
+    <div id="chatBox" class="message-stream">
+        </div>
+
+<div class="composer-area">
+  <div id="imagePreviewContainer" style="display: none; padding: 10px; position: relative; background: #f9f9f9; border-top: 1px solid #eee;">
+      <img id="imagePreview" src="" style="max-height: 100px; border-radius: 2px; border: 1px solid #000;">
+      <button id="clearPreview" style="position: absolute; top: 15px; left: 105px; background: #ff0000; color: white; border: none; border-radius: 50%; width: 22px; height: 22px; cursor: pointer; font-weight: bold; line-height: 1;">×</button>
+  </div>
+
+  <div class="composer-container">
+      <button id="attachBtn" class="icon-btn" type="button" style="background:none; border:none; cursor:pointer; padding: 0 10px; color: #666;">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+              <path d="M16.5 6v11.5c0 2.21-1.79 4-4 4s-4-1.79-4-4V5c0-1.38 1.12-2.5 2.5-2.5s2.5 1.12 2.5 2.5v10.5c0 .55-.45 1-1 1s-1-.45-1-1V6H10v9.5c0 1.38 1.12 2.5 2.5 2.5s2.5-1.12 2.5-2.5V5c0-2.21-1.79-4-4-4s-4 1.79-4 4v12.5c0 3.31 2.69 6 6 6s6-2.69 6-6V6h-1.5z"/>
+          </svg>
+      </button>
+
+      <input id="fileInput" type="file" accept="image/*" hidden>
+
+      <input type="text" id="chatInput" placeholder="Message Concierge..." autocomplete="off">
+      
+      <button id="chatSend">
+          <svg viewBox="0 0 24 24" width="22" height="22">
+              <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z" fill="currentColor"></path>
+          </svg>
+      </button>
+  </div>
+</div>
+
+  </div>
+</main>
+
+  <footer class="site-footer">
+    <div class="footer-left"><p class="brand">the authentic edge</p></div>
+    <div class="footer-right">
+      <a href="mailto:authenticedge@gmail.com" class="email">authenticedge@gmail.com</a>
+      <a href="https://instagram.com/theauthenticedge_/" target="_blank" class="insta-btn">Instagram</a>
+    </div>
+  </footer>
+
+  <script src="header.js"></script>
+  <script type="module" src="user-messages.js"></script>
+</body>
+</html>

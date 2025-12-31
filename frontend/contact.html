@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Authentic Edge | Contact</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap">
+  <link rel="stylesheet" href="theme.css">
+  <link rel="stylesheet" href="mobile-header.css">
+
+  <link rel="stylesheet" href="contact.css">
+</head> 
+<body class="contact-page-body">
+
+<header>
+  <div class="header-container">
+    <a href="index.html" style="text-decoration: none; color: inherit;">
+      <h1 class="logo">Authentic Edge</h1>
+    </a>
+    <div class="menu-toggle" aria-label="Toggle navigation">☰</div>
+    <nav class="nav-menu" id="header-buttons"></nav>
+  </div>
+</header>
+
+<main class="contact-container">
+  <section class="contact-header">
+    <span class="eyebrow">Get in touch</span>
+    <h2>Contact Us</h2>
+    <p>Have questions about your subscription or a recent drop? Our team is here to help.</p>
+  </section>
+
+  <section class="contact-content">
+    <form id="contactForm" class="contact-form">
+      <div class="form-row">
+        <div class="form-group">
+          <label>Full Name</label>
+          <input type="text" id="contactName" placeholder="Your Name" required>
+        </div>
+        <div class="form-group">
+          <label>Email Address</label>
+          <input type="email" placeholder="email@example.com" required>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>Phone Number</label>
+        <div class="phone-group">
+          <select class="country-code" required>
+            <option value="+31">🇳🇱 +31</option>
+            <option value="+1">🇺🇸 +1</option>
+            <option value="+44">🇬🇧 +44</option>
+            <option value="+49">🇩🇪 +49</option>
+            </select>
+          <input type="tel" class="phone-input" placeholder="00 000 0000" required>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>Message</label>
+        <textarea id="contactDescription" placeholder="How can we help you?" required></textarea>
+      </div>
+
+      <button type="submit" class="btn-submit">Send Message</button>
+    </form>
+  </section>
+</main>
+
+<footer class="site-footer">
+    <div class="footer-left">
+      <p class="brand">the authentic edge</p>
+    </div>
+
+    <div class="footer-center">
+      <a href="legal.html" class="legal-link">Privacy & Terms</a>
+    </div>
+
+    <div class="footer-right">
+      <a href="mailto:authenticedge@gmail.com" class="email">authenticedge@gmail.com</a>
+      <a href="https://instagram.com/theauthenticedge_/" target="_blank" class="insta-btn">Instagram</a>
+    </div>
+</footer>
+<script src="https://www.google.com/recaptcha/api.js?render=6LfBhRQsAAAAANIKzqgbUZnKkNAH09Tgfd0d3s9I"></script>
+<script type="module" src="contact.js"></script>
+<script src="header.js"></script>
+</body>
+</html>
